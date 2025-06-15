@@ -12,21 +12,17 @@ public class Main
         pAffiliation = input.nextLine();
         pAffiliation = pAffiliation.toUpperCase();
 
-        switch (pAffiliation)
-        {
-            case "D":
-                System.out.println("You get a Democratic Donkey!");
-                break;
-            case "R":
-                System.out.println("You get a Republican Elephant!");
-                break;
-            case "I":
-                System.out.println("You get an Independent Person!");
-                break;
-            default:
-                System.out.println("You got... an Other!");
-                break;
-        }
+        if (pAffiliation.equals("D"))
+            System.out.println("You get a Democratic Donkey!");
+
+        else if (pAffiliation.equals("R"))
+            System.out.println("You get a Republican Elephant!");
+
+        else if (pAffiliation.equals("I"))
+            System.out.println("You get an Independent Person!");
+
+        else
+            System.out.println("You got... an Other!");
 
     }
 }
