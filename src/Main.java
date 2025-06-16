@@ -13,16 +13,21 @@ public class Main
         pAffiliation = pAffiliation.toUpperCase();
 
         if (pAffiliation.equals("D"))
+        {
             System.out.println("You get a Democratic Donkey!");
-
+        }
         else if (pAffiliation.equals("R"))
+        {
             System.out.println("You get a Republican Elephant!");
-
+        }
         else if (pAffiliation.equals("I"))
+        {
             System.out.println("You get an Independent Person!");
-
+        }
         else
+        {
             System.out.println("You got... an Other!");
+        }
 
     }
 }
